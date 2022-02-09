@@ -1,0 +1,268 @@
+body{
+    margin:auto;
+}
+#head{
+    height:100px;
+    width:100%;
+    display:inline-block;
+    color:black;
+    background-color: orange;
+    border-radius: 10px;
+}
+#header{
+    height:auto;
+    width:12%;
+    text-align:center;
+    margin-top:20px;
+    margin-left:15%;
+    font-weight: bolder;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float:Left;
+}
+.select{
+    height:60px;
+    width:15%;
+    font-size:15px;
+    text-align:center;
+    border-radius: 30px;
+    float:Left;
+    margin-top:26px;
+    margin-left:6px; 
+    background-color:orange; 
+    border:2px groove black; 
+}
+
+.restlist{
+    height:60px;
+    width:20%;
+    font-size:15px;
+    border-radius: 30px;
+    float:Left;
+    margin-top:26px;
+    margin-left:8px;
+}
+#login{
+    width:10%;
+    float:Left;
+    margin-left:6px;
+    margin-top:35px;
+    font-size:25px;
+    text-align:center;
+}
+#signup{
+    width:10%;
+    float:Left;
+    margin-top:35px;
+    font-size:25px;
+    margin-left:-10px;
+    text-align:center;
+    margin-right:15%;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+h1{
+    text-align:center;
+}
+#mainframe{
+    height:1014px;
+    width:100%;
+    display:inline-block;
+    
+}
+#list{
+    height: 1048px;
+    width:15%;
+    float:left;
+    border:5px groove lightgray ;
+    margin-left:16%;
+    line-height:2;
+    font-size:20px;
+    margin-top:15px;  
+}
+#list > div{
+    margin-left:10px;
+}
+
+#tiles{
+    height: 1014px;
+    width:60%;
+    margin-left:2px;
+    float:left;
+    margin-right:8%
+}
+.checked{
+    color:orange;
+    
+}
+
+.tile{
+    width:60%;
+    height:320px;
+    margin-top:15px;
+    margin-left:20%;
+    margin-right:20%;
+    display:inline-block;
+    transition: transform .2s;
+    box-shadow: 10px 5px 10px gray;
+    border-radius:15px;
+
+}
+.tile:hover {
+    -ms-transform: scale(1.05); 
+    -webkit-transform: scale(1.05); 
+    transform: scale(1.05);
+} 
+
+.picture{
+    margin-top:20px;
+    margin-left:4px;
+    height:258px;
+    width:40%;
+    float:left;
+    
+}
+.Description{
+    margin-top:-6px;
+    height:350px;
+    width:50%;
+    float:left;
+    margin-left:1%;
+   
+}
+.picture  img{
+    width:100%;
+    border-radius: 15px;
+    height:258px;
+}
+.description > h1{
+    text-align:left;
+    color:orange;
+}
+
+.description > p{
+    margin-top:2px;
+    text-align:left;
+    color:gray;
+    font-size:20px;
+}
+
+.tag{
+    float:left;
+    width:25%;
+    background-color:orange;
+    height:30px;
+    text-align:center;
+    border-radius:6px;
+    
+    color:white;  
+}
+.tag1{
+    float:left;
+    width:25%;
+    background-color:green;
+    height:30px;
+    text-align:center;
+    border-radius:6px;
+    margin-left:4px; 
+    color:white;
+}
+
+.tagclass{
+    display:inline-block;
+    width:100%;
+    margin-top:4px;
+}
+.tagclass1{
+    display:inline-block;
+    width:100%;
+    margin-top:10px;
+}
+.tag2{
+    float:left;
+    width:35%;
+    background-color:blue;
+    height:30px;
+    text-align:center;
+    border-radius:6px;
+    color:white;
+}
+
+.tag3{
+    float:left;
+    width:35%;
+    background-color:red;
+    height:30px;
+    text-align:center;
+    border-radius:6px;
+    margin-left:4px;
+    color:white;
+}
+
+
+
+span{
+    line-height:1.5; 
+    font-size:20px; 
+}
+h3{
+    margin-top:-5px;
+    margin-bottom:-5px;
+}
+
+input{
+    line-height:3;
+    margin-left:4px;
+    text-align:center
+}
+.next{
+    margin-top:20px;
+    height:40px;
+    width:30%;
+    display:inline-block;
+    margin-left: 47%;
+    margin-right:23%;
+    border-radius:10px;
+}
+.counting{
+    height:40px;
+    width:12%;
+    float:left;
+    border:2px solid blue;
+    margin-left:8px;
+    font-size:20px;
+    line-height: 2;
+    text-align:center;
+    border-radius:10px;
+    font-weight: bold;
+    background-color:lightgreen;
+    transition: transform .2s;
+
+}
+.counting:hover {
+    -ms-transform: scale(1.05); 
+    -webkit-transform: scale(1.05); 
+    transform: scale(1.05);
+} 
+
+
+.footer{
+    
+    background-color: orange;
+}
+footer{
+    font-size: 25px;
+    text-align:center;
+
+}
+
+
+
+
+
+
+
+
+
