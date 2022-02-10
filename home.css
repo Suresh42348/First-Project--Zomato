@@ -675,8 +675,8 @@ select{
     }
     .card {
         height: 330px;
-        width: 71%;
-        margin-left: 15%;
+        width: 90%;
+        margin-left: 5%;
     }
     .tiles {
         height: 154px;
