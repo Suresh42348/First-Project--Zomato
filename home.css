@@ -378,74 +378,50 @@ footer{
 }
    
 }
-@media only screen 
-   and (max-width : 1600px) {
-    /*body{
-        background-color: lightcoral;
-    }*/
-    
-  #heading{
-    font-size: 69px;
-  }
-  #subheading{
-    font-size: 37px;
-    margin-top: 2%;
-  }
-  .dropdown{
-    margin-top: 6%;
-  }
-  .service{
-      width:46%;
-      height:500px;
-      margin-top: 2%;
-  }
-  .img {
-    height: 445px;
-  }
-  .about {
-    margin-top: 4px;
-    font-size: 20px;
-}
-.card {
-    margin-top:2%;
-    width: 46%;
-    height:560px;
-}  
-.collectionimages {
-    height:560px;
-}  
-.text-block{
-    margin-top: -17%;
-}
+ @media only screen 
+   and (max-width : 1500px) {
+       #services{
+           margin-left:2%;
+           margin-right:2%;
+       }
+       .service {
+        width: 23.80%;
+        margin-left: 11px;
+       
+    }
+    .collection{
+        margin-left:2%;
+        margin-right:2%;
 
-#QuickHeading {
-    font-size: 50px;
-    margin-left: 192px; 
-}
-#QuickSubHeading {
-    
-    font-size: 30px;
-    margin-left: 192px;
-    
-}
-.tilecontainer {
-    margin-left: 10%;
-    margin-right: 16%;
-}
-.tiles {
-    
-    width: 48%;
-    margin-left:2%;
-}
-    
-.componentHeading {
-    font-size: 30px;
-}
-.footer{
-    margin-top:4%;
-}
-}
+    }
+    .card{
+        width: 23.80%;
+        margin-left: 11px;
 
+    }
+    .text-block {
+        margin-top: -31%;
+        font-size:18px;
+    }
+    h2{
+        font-size:28px;
+    }
+    .tilecontainer {
+       
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #QuickHeading {
+        margin-left: 42px;
+    }
+    #QuicksubHeading {
+        margin-left: 42px;
+    }
+    
+   
+    
+  
+   }
 @media only screen 
    and (max-width : 1360px) {
 
@@ -453,13 +429,13 @@ footer{
         margin-left:25%;
         color:white;  
       }
-   }
+   } 
 
 @media only screen 
    and (max-width : 1100px) {
     /*body{
         background-color: lightgreen;
-    }*/
+    } */
     .collapse >ul {
         margin-left:20%;
         color:white;  
@@ -496,6 +472,10 @@ footer{
         font-size: 14px;
         width: 39%;
     }
+    #services {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
     .service {
         width: 47%;
         height: 420px;
@@ -503,6 +483,11 @@ footer{
     }
     .img {
         height: 372px;
+    }
+    .collection{
+        margin-left: 12%;
+        margin-right: 12%;
+
     }
     #collectionheading {
         font-size: 38px;
@@ -534,21 +519,26 @@ footer{
 
     #QuickHeading {
         font-size: 38px;
-        margin-left: 60px;
+        margin-left: -43%;
         text-align:center ;
     }
     #QuickSubHeading {
         
         font-size: 25px;
-        margin-left: 58px;
+        margin-left: -34%;
         text-align:center;
         
     }
-    .tiles {
-        width: 48%;
-        margin-left: 2%;
-        height: 190PX;
-    }
+    
+.tilecontainer {
+    margin-left: 12%;
+    margin-right: 3%;
+}
+.tiles {
+    height: 190px;
+    width: 43%;
+}
+    
     .componentHeading {
         font-size: 21px;
     }
@@ -561,8 +551,7 @@ footer{
     }
     .footer{
         height:46px;
-
-        
+        margin-top:1%;   
     }
     
     .footer p {
@@ -614,35 +603,40 @@ select{
     font-size: 14px;
     width: 39%;
 }
+
+#services {
+    margin-left: 7%;
+    margin-right: -3%;
+}
 .service {
     height: 300px;
-    width: 60%;
-    margin-left: 21%;
+    width: 42%;
+    margin-left: 2%;
 }
+.collection{
+    margin-left: 7%;
+    margin-right: -3%;
+}
+.card {
+    height:330px;
+    width: 42%;
+    margin-left: 2%;
+}
+
 .img{
     height:260px;
 
 }
-#collectionheading {
-    font-size: 30px;
-    margin-left: 21%;
-    width:60%;
-    text-align: center;
-    
+#collectionheading{
+    margin-left:2%;
+    text-align:left;
+    width: 86%;
 }
 #collectionsubheading {
-    font-size: 17px;
-    margin-left: 21%;
-    width:60%;
-    text-align: center;
-    
+    width: 86%;
 }
 
-.card{
-    height:330px; 
-    width: 60%;
-    margin-left: 21%;  
-}
+
 .collectionimages{
     height:330px;
 }
@@ -652,29 +646,27 @@ select{
 }
 #QuickHeading {
     font-size: 30px;
-    margin-left: 18px;
+    margin-left: -58%;
     text-align: center;
 }
 #QuickSubHeading {
     font-size: 17px;
-    margin-left: 12px;
+    margin-left: -54%;
     text-align: center;
 }
-.tiles{
-    height:200px;
-    width: 66%;
-    margin-left: 21%;
+.tiles {
+    height: 200px;
+    width: 44%;
+    margin-left: 3%;
+}
+.tilecontainer {
+    margin-left: 6%;
+    margin-right: 3%;
 }
 .tileComponent1 img{
     height:200px;
 }
-#collectionheading {
-    font-size: 38px;
-    margin-left: 21%;
-    width:60%;
-    text-align: center;
-    
-}
+
 .componentHeading {
     color: gray;
     font-size: 17px;
@@ -702,6 +694,16 @@ select{
     margin-left: 13px;
     font-size: 22px;
  }
+ #QuickHeading {
+    font-size: 30px;
+    margin-left: -56%;
+    text-align: center;
+}
+#QuickSubHeading {
+    font-size: 17px;
+    margin-left: -52%;
+    text-align: center;
+}
 
 }
  @media only screen 
@@ -710,17 +712,63 @@ select{
     
         font-size:15px; 
       }
+      .tilecontainer {
+        margin-left: 6%;
+      }
     
-    .tiles {
-        height: 184px;
-        width: 74%;
-        margin-left: 15%;
+      .tiles {
+        height: 155px;
+        width: 46%;
+        margin-left: 2%;
     }
     .tileComponent1 img{
-        height: 184px;
+        height: 155px;
 
     }
+    #QuickHeading {
+        font-size: 30px;
+        margin-left: -53%;
+        text-align: center;
+    }
+    #QuickSubHeading {
+        font-size: 17px;
+        margin-left: -49%;
+        text-align: center;
+    }
  }
+ @media only screen 
+   and (max-width : 550px) {
+    .div1 {
+        height: 310px;
+    }
+    #services {
+        margin-left: 2%;
+        margin-right: 0%;
+    }
+    .service {
+        width: 46%;
+        margin-left: 2%;
+    }
+    .collection {
+        margin-left: 2%;
+        margin-right: 0%;
+    }
+    .card {
+        
+        width: 46%;
+        margin-left: 2%;
+    }
+    .tilecontainer {
+        margin-left: 2%;
+    }
+    .tiles {
+    
+        width: 47%;
+
+   }
+}
+
+
  
  /* for mobiles */
  @media only screen 
