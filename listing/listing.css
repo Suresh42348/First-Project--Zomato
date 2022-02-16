@@ -8,8 +8,8 @@ html,body {
     height:100px;
     width:100%;
     display:inline-block;
-    color:black;
-    background-color: orange;
+    color:white;
+    background-color:#550303;
     border-radius: 10px;
 }
 #header{
@@ -32,8 +32,9 @@ html,body {
     float:Left;
     margin-top:26px;
     margin-left:6px; 
-    background-color:orange; 
-    border:2px groove black; 
+    background-color:#550303; 
+    border:2px groove white; 
+    color:white;
 }
 
 .restlist{
@@ -52,6 +53,7 @@ html,body {
     margin-top:35px;
     font-size:25px;
     text-align:center;
+    color:white;
 }
 #signup{
     width:10%;
@@ -61,11 +63,17 @@ html,body {
     margin-left:-10px;
     text-align:center;
     margin-right:15%;
+    color:white;
+}
+#head a{
+    text-decoration:none;
+    color:white;
 }
 a{
     text-decoration:none;
     color:black;
 }
+
 h1{
     text-align:center;
 }
@@ -98,7 +106,7 @@ h1{
     margin-right:8%
 }
 .checked{
-    color:orange;
+    color:#550303;
     
 }
 
@@ -143,7 +151,7 @@ h1{
 }
 .description > h1{
     text-align:left;
-    color:orange;
+    color:#550303;
 }
 
 .description > p{
@@ -156,7 +164,7 @@ h1{
 .tag{
     float:left;
     width:25%;
-    background-color:orange;
+    background-color:#550303;
     height:30px;
     text-align:center;
     border-radius:6px;
@@ -197,7 +205,7 @@ h1{
 .tag3{
     float:left;
     width:35%;
-    background-color:red;
+    background-color:#550303;
     height:30px;
     text-align:center;
     border-radius:6px;
@@ -255,7 +263,7 @@ input{
 
 .footer{
     
-    background-color: orange;
+    background-color: #550303;
     padding:0%;
     margin-top:10px;
     width:100%;
@@ -267,6 +275,8 @@ footer{
     margin-top:-11px;
     font-size: 20px;
     text-align:center;
+    color:white;
+
 
 }
 
