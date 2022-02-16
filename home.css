@@ -732,7 +732,7 @@ select{
     }
     #QuickSubHeading {
         font-size: 17px;
-        margin-left: -49%;
+        margin-left: -48%;
         text-align: center;
     }
  }
@@ -759,11 +759,11 @@ select{
         margin-left: 2%;
     }
     .tilecontainer {
-        margin-left: 2%;
+        margin-left: 1%;
     }
     .tiles {
     
-        width: 47%;
+        width: 48%;
 
    }
 }
