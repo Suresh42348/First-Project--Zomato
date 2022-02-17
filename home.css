@@ -814,25 +814,50 @@ select{
 
     .service {
         height: 300px;
-        width: 90%;
-        margin-left: 5%;
+        width: 82%;
+        margin-left: 8%;
     }
     .card {
-        height: 330px;
-        width: 90%;
-        margin-left: 5%;
+        width: 82%;
+        margin-left: 8%;
     }
+    .tilecontainer {
+        margin-left: 6%;
+    }
+    
     .tiles {
         height: 154px;
-        width: 106%;
-        margin-left: 2%;
+        width: 89%;
+        margin-left: 3%;
     }
     .tileComponent1 img{
         height: 154px;
 
     }
-   
-            
+    #collectionheading{
+        margin-left:8%;
+
+    }
+    #collectionsubheading{
+        margin-left:9%;
+    }
+    #QuickHeading {
+        margin-left: -31%;
+    }
+    #QuickSubHeading {
+        margin-left: -22%;       
+   }
+}
+
+@media only screen 
+   and (max-width : 280px) {
+    #QuickHeading {
+        margin-left: -7%;
+    }
+    #QuickSubHeading {
+        margin-left: 4%;
+    }
+
    }
 
 /*hiding horizontal scrollbars*/
