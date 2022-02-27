@@ -3,6 +3,23 @@ html,body {
     padding:0;
     overflow-x:hidden;
 }
+/* light dark mode */
+.mydark{
+    background-color:black;
+    color:white ;
+ }
+ #btn{
+     background-color: #550303;
+     border:#550303;
+     margin-top:15px;
+
+ }
+#darkmode{
+    height:25px;
+    width:auto;
+    padding:0;
+    border-radius:10px;
+}
 
 #logo{
     background-color: rgba(255, 255, 255,1);
@@ -29,8 +46,8 @@ html,body {
     font-size:25px;
 }
 .social{
-    height:30px !important;
-    width:30px !important;
+    height:25px !important;
+    width:25px !important;
     border-radius:50%;
 }
 .navbar-brand > #logo{
@@ -49,9 +66,10 @@ html,body {
     
 }
 .collapse >ul {
-    margin-left:31%;
+    margin-left:29%;
     color:white;  
   }
+
 
 .container-fluid{
     margin:0;
@@ -61,7 +79,7 @@ html,body {
     width:100%;
 }
 .div1{
-    background-attachment: fixed;
+    
     background-image: url(./images/zomatto.png);
     background-repeat: no-repeat;
     background-size:100% 620px;
@@ -174,7 +192,7 @@ select{
     box-shadow: 3px 3px 5px gray;  
     transition: transform .2s;
 }
- #a {
+ .a {
     color:black;
     
 }
@@ -436,7 +454,7 @@ footer{
   
    }
 @media only screen 
-   and (max-width : 1360px) {
+   and (max-width : 1691px) {
 
     .collapse >ul {
         margin-left:25%;
@@ -445,19 +463,19 @@ footer{
    }
    
    @media only screen 
-   and (max-width : 1358px) {
+   and (max-width : 1495px) {
     .collapse >ul {
         margin-left: 22%;
     }
    }
    @media only screen 
-   and (max-width : 1217px) {
+   and (max-width : 1340px) {
     .collapse >ul {
         margin-left: 15%;
     }
    }
 @media only screen 
-   and (max-width : 1100px) {
+   and (max-width : 1103px) {
     .collapse >ul {
         margin-left:0;
     
@@ -889,14 +907,3 @@ select{
 
    }
 
-/*hiding horizontal scrollbars*/
-
-   ::-webkit-scrollbar {
-    display: none;
-}
-::-moz-scrollbar {
-    display: none;
-}
-::-o-scrollbar {
-    display: none;
-}
