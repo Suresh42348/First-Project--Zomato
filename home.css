@@ -33,8 +33,11 @@ html,body {
     background-image:url(./images/coupon.webp);
     float:left;
     position: relative;
-    
-    
+    box-shadow: 10px 20px 10px black;
+}
+
+#cut{
+    background-color: gray;
 }
 
 #logo{
