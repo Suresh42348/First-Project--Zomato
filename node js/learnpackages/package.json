@@ -1,0 +1,15 @@
+{
+  "name": "learnpackages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Suresh",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "express": "^4.17.3"
+  }
+}
