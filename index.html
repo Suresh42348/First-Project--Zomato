@@ -72,24 +72,24 @@
             </div>
             <div id="subheading">
                 <span>Discover Best Food & Drinks Near You</span>
-
+            
             </div>
+            <!-- dynamic dropdown -->
             <div class="dropdown">
-                <select>
+                <select  id="city" onChange="getRest()">
                     <option>-----PLEASE SELECT CITY-----</option>
-                    <option>Delhi</option>
-                    <option>Mumbai</option>
-                    <option>Pune</option>
                 </select>
-                <select class="restlist">
+                <select class="restlist"  id="restaurant">
                     <option>-----PLEASE SELECT RESTAURANTS-----</option>
-                    <option>Delhi</option>
-                    <option>Mumbai</option>
-                    <option>Pune</option>
+                    
                 </select>
             </div>
         
         </div>
+        <!-- calling getcity function -->
+        <script>
+            window.onload=getCity()
+        </script>
         <div id="services" >
             <div class="service">
                 <div >
