@@ -12,7 +12,7 @@ const QuickDisplay = (props) => {
                     <Link to={`/listing/${item.mealtype_id}`} key={item._id}>
                    
                      
-                   
+                        <div id="tilecontainer">
                             <div className="tiles">
                             <div className="tileComponent1">
                                 <img src={item.meal_image} alt={item.mealtype}/>
@@ -25,6 +25,7 @@ const QuickDisplay = (props) => {
                                     {item.content}
                                 </div>
                             </div>
+                        </div>
                         </div>
                        
                        

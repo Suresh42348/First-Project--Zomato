@@ -1,13 +1,21 @@
 import React,{Component} from 'react';
 import './Search.css';
+import Header from '../../header';
 
 class Services extends Component {
 
     render(){
         return (
             <div>
+            <Header/>
          
             <div id="services" >
+            <div id="collectionheading">
+                <span>Services</span>
+            </div>
+            <div id="collectionsubheading">
+                <span>Enjoy our best services</span>
+            </div>
             <div className="service">
                 <div >
                     <img src="https://i.ibb.co/crkrn7M/order1.webp" class="img"/>

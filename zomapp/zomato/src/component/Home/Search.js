@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import './Search.css';
+import {withRouter} from 'react-router-dom'
 
 const url = "https://zomatoajulypi.herokuapp.com/location"
 const restUrl = "https://zomatoajulypi.herokuapp.com/restaurant?stateId="
@@ -36,8 +37,14 @@ class Search extends Component{
     }
 
     handleRestaurants = (event) => {
-        let stateId = event.target.value;
-        fetch(`${restUrl}${stateId}`,{method:'GET'})
+        let restId = event.target.value;
+        console.log(">>>>inside",restId)
+        this.props.history.push(`/details?restId=${restId}`)
+    }
+
+    handleCity = (event) => {
+        let restId = event.target.value;
+        fetch(`${restUrl}${restId}`,{method:'GET'})
         .then((res) => res.json())
         .then((data) => {
             // console.log(">>>>",data)
@@ -45,24 +52,16 @@ class Search extends Component{
         })
     }
 
+
     render(){
         console.log(">>>>inside render")
         return(
             <div className="div1 ">
             <div className="header">
-            <a href="https://www.zomato.com/">Get the app</a> 
+            <a className="linkcolor" href="https://www.zomato.com/">Get the app</a> 
             </div>
-            <div className="header1">
-            <div className="subheader1">
-                <a href="https://www.zomato.com/">Add  Restaurent</a>
-            </div>
-            <div className="subheader1">
-                <a href="https://www.zomato.com/">Log in</a>
-            </div>
-            <div className="subheader1">
-                <a href="https://www.zomato.com/">Sign up</a> 
-            </div>
-            
+            <div className="header2">
+            <a className="linkcolor" href="https://www.zomato.com/">Add  Restaurent</a>  
             </div>
             <div id="heading">
                 <span><i>zomato </i></span>
@@ -72,11 +71,11 @@ class Search extends Component{
             
             </div>
             <div className="dropdown">
-                        <select onChange={this.handleRestaurants}>
+                        <select onChange={this.handleCity}>
                             <option>-----PLEASE SELECT CITY-----</option>
                             {this.renderCity(this.state.location)}
                         </select>
-                        <select className="restlist" id="restaurant">
+                        <select className="restlist" id="restaurant" onChange={this.handleRestaurants}>
                             <option>-----PLEASE SELECT RESTAURANTS-----</option>
                             {this.renderRest(this.state.restaurants)}
                         </select>
@@ -104,4 +103,4 @@ class Search extends Component{
     }
 }
 
-export default Search
+export default withRouter(Search)

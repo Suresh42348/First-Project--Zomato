@@ -7,6 +7,7 @@ class MenuDisplay extends Component {
     placeOrder = (id) => {
         this.orderId.push(id)
         this.props.finalOrder(this.orderId)
+        sessionStorage.setItem("addedincart", this.orderId)
     }
 
     removeOrder = (id) => {

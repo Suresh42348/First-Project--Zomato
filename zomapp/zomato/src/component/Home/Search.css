@@ -117,30 +117,25 @@ html,body {
     margin-left:2%;
     height:30px;
     font-weight: bold;   
-    text-align: center;
-}
-.header1{
-    font-size: 22px;
-    width:60%;
-    margin-top:2%;
-    margin-left:17%;
-    height:30px;
-    float:left;
-    font-weight: bold;
-    text-align:right;
-}
-.subheader1{
-    float:left;
-    width:30%;
-    margin-top:0;
-    margin-left:3%;
-    height:30px;  
-}
+    text-align: center;}
+.header2{
+        font-size: 22px;
+        width:60%;
+        margin-top:2%;
+        margin-left:10%;
+        height:30px;
+        float:left;
+        font-weight: bold;
+        text-align:right;
+    }
 
-a {
+a.linkcolor{
     text-decoration: none;
     color:white;
     
+}
+a{
+    color:rgb(1, 1, 56)
 }
 
 #heading{
@@ -310,7 +305,7 @@ select{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight:bold;
     display:block;
-    margin-top:3px;
+    margin-top:2%;
     margin-left: 24px;
 }
 
@@ -331,7 +326,7 @@ select{
     width:32%;
     float: left;
     margin-top: 3%;
-    margin-left:1%;
+    margin-left:2%;
     border-radius: 15px;
     transition: transform .2s;
     box-shadow: 10px 20px 10px gray;
@@ -385,7 +380,7 @@ select{
     margin-top:5%;
 }
 footer{
-    font-size: 30px;
+    font-size: 20px;
     text-align:center;
     font-weight: bold;
     color:white;
