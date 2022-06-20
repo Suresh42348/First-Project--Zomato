@@ -19,7 +19,8 @@ const Routing = () => {
                 <Route exact path="/" component={Home}/>
                 <Route path="/Services" component={Services}/>
                 <Route path="/listing/:id" component={Listing}/>
-                <Route path="/details" component={Details}/>
+                <Route exact path="/details" component={Details}/>
+                <Route path="/details/:restId" component={Details}/>
                 <Route path="/placeOrder/:restName" component={PlaceOrder}/>
                 <Route exact path="/placeOrder" component={PlaceOrder}/>
                 <Route path="/viewBooking" component={ViewOrder}/>

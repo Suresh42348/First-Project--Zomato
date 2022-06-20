@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import Header from '../../header.js'
 import { Link } from 'react-router-dom';
-const url = "http://localhost:5000/api/auth/login";
+const url = "https://zlogin42348.herokuapp.com/api/auth/login";
 
 class Login extends Component {
     constructor(props){

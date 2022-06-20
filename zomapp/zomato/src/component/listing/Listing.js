@@ -6,7 +6,7 @@ import CuisineFilter from '../filters/cuisineFilter';
 import CostFilter from '../filters/costFilter';
 import Header from '../../header'
 
-const restUrl = "https://zomatoajulypi.herokuapp.com/restaurant?mealtype_id="
+const restUrl = "https://zomato42348.herokuapp.com/restaurants?mealtype_id="
 
 class Listing extends Component {
     constructor(props){

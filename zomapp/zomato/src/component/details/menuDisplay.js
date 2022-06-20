@@ -28,8 +28,11 @@ class MenuDisplay extends Component {
     }
 
     renderMenu = ({menudata}) => {
-        if(menudata){
-            return menudata.map((item) => {
+        console.log(menudata)
+        if(menudata[0]){
+            console.log(menudata[0])
+
+            return menudata[0].map((item) => {
                 return(
                     <>
                     <div key={item._id}>

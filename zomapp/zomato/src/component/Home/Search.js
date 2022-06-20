@@ -2,8 +2,8 @@ import React,{Component} from 'react';
 import './Search.css';
 import {withRouter} from 'react-router-dom'
 
-const url = "https://zomatoajulypi.herokuapp.com/location"
-const restUrl = "https://zomatoajulypi.herokuapp.com/restaurant?stateId="
+const url = "http://zomato42348.herokuapp.com/location"
+const restUrl = "http://zomato42348.herokuapp.com/restaurant?stateId="
 class Search extends Component{
 
     constructor(props){

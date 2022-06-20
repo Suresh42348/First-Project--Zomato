@@ -91,6 +91,13 @@ app.get('/details/:id',(req,res) => {
         res.send(result)
     })
 })
+//quick search
+app.get('/quicksearch',(req,res) => {
+    db.collection('quicksearch').find().toArray((err,result) => {
+        if(err) throw err;
+        res.send(result)
+    })
+})
 
 
 //menu

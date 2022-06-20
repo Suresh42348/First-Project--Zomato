@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import './Header.css';
 import {Link,withRouter} from 'react-router-dom';
 
-const url = "http://localhost:5000/api/auth/userinfo"
+const url = "https://zlogin42348.herokuapp.com/api/auth/userinfo"
 
 class Header extends Component {
 

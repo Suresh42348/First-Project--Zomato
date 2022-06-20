@@ -3,7 +3,7 @@ import axios from 'axios';
 import './listing.css';
 import ListingDisplay from './listingDisplay'
 
-const restUrl = "https://zomatoajulypi.herokuapp.com/restaurant?mealtype_id="
+const restUrl = "https://zomato42348.herokuapp.com/restaurant?mealtype_id="
 
 class Listing extends Component {
     constructor(props){

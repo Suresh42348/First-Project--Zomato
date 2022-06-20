@@ -5,8 +5,8 @@ import {Link} from 'react-router-dom';
 import MenuDisplay from './menuDisplay'
 import Header from '../../header'
 
-const url = "https://zomatoajulypi.herokuapp.com/details"
-const menuUrl = "https://zomatoajulypi.herokuapp.com/menu"
+const url = "http://zomato42348.herokuapp.com/details"
+const menuUrl = "http://zomato42348.herokuapp.com/menu"
 
 class RestDetails extends Component {
 
@@ -15,7 +15,7 @@ class RestDetails extends Component {
 
         this.state={
             details:'',
-            menuList:'',
+            menuList:[],
             userItem:'',
             mealId:sessionStorage.getItem('mealId')?sessionStorage.getItem('mealId'):1
         }
@@ -33,10 +33,15 @@ class RestDetails extends Component {
     render(){
         //let details = this.state.details
         let {details} = this.state
-        console.log(this.state.userItem)
+        console.log(this.state.details)
         return(
             <>
                 <Header/>
+                {/* { this.state.details.length>0 &&  */}
+
+                
+                <div>
+
                 <div id="mainContent">
                     <div className="imgDiv">
                     <img src={this.state.details.restaurant_thumb} alt="snacks"/>
@@ -74,6 +79,10 @@ class RestDetails extends Component {
                     <MenuDisplay menudata={this.state.menuList}
                     finalOrder={(data) => {this.addToCart(data)}}/>
                 </div>
+                </div>
+    {/* } */}
+                
+
 
             </>
         )
@@ -81,11 +90,17 @@ class RestDetails extends Component {
 
     //calling api with async await 
     async componentDidMount(){
-        let restId = this.props.location.search.split('=')[1];
+        let restId = this.props.match.params.restId;
+        console.log(restId)
         let response = await axios.get(`${url}/${restId}`)
-        console.log(">>>response.data[0].restaurant_id",response.data[0].restaurant_id)
-        let menuResponse = await axios.get(`${menuUrl}/${response.data[0].restaurant_id}`)
-        this.setState({details:response.data[0],menuList:menuResponse.data})
+        // console.log(">>>response.data[0].restaurant_id",response.data[0].restaurant_id)
+        this.setState({
+            details:response.data[0]
+        })
+        console.log(response.data[0])
+        let menuResponse = await axios.get(`${menuUrl}?restId=${response.data[0].restaurant_id}`)
+        console.log(menuResponse)
+        this.setState({menuList:[menuResponse.data]})
     }
 }
 
