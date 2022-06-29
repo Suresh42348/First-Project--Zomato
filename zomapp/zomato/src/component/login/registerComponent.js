@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
-import Header from '../../header.js'
+import Header from '../../header.js';
+import './login.css'
 
 const url = "https://zlogin42348.herokuapp.com/api/auth/register";
 
@@ -37,9 +38,9 @@ class Register extends Component {
             <Header/>
             <div className="container">
                 <hr/>
-                <div className="panel panel-primary">
+                <div className="panel panel-info">
                     <div className="panel-heading">
-                        Register
+                        <h2 classname="alpha">Register</h2>
                     </div>
                     <div className="panel-body">
                         <div className="row">
@@ -65,7 +66,7 @@ class Register extends Component {
                             </div>
                            
                         </div>
-                        <button className="btn btn-success" onClick={this.register}>Register</button>
+                        <button className=" reg1 btn btn-primary" onClick={this.register}>Register</button>
                     </div>
                 </div>
             </div>

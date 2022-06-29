@@ -54,12 +54,21 @@ h2{
     height:50px;
     width:200px;
     font-size:20px;
-    background-color:rgb(144, 145, 235)
+    background-color:rgb(87, 128, 0)
 }
 
 .btn-back{
     height:50px;
     width:200px;
     font-size:20px;
-    background-color:rgb(237, 120, 120)
+    background-color:rgb(255, 72, 0)
+}
+
+.random{
+   margin-top:5%;
+   height:fit-content;
+   
+}
+.random img{
+    border-radius:5px ;
 }

@@ -9,7 +9,8 @@ import Services from './component/services/Services';
 import PlaceOrder from './component/Booking/PlaceOrder';
 import ViewOrder from './component/Booking/ViewOrder';
 import Login from './component/login/loginComponent';
-import Register from './component/login/registerComponent'
+import Register from './component/login/registerComponent';
+import Aboutus from './component/Home/aboutus';
 
 
 const Routing = () => {
@@ -26,6 +27,7 @@ const Routing = () => {
                 <Route path="/viewBooking" component={ViewOrder}/>
                 <Route path="/login" component={Login}/>
                 <Route path="/register" component={Register}/>
+                <Route path="/aboutus" component={Aboutus}/>
             <Footer/>
         </BrowserRouter>
     )

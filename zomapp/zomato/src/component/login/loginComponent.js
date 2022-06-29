@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Header from '../../header.js'
 import { Link } from 'react-router-dom';
+import './login.css'
 const url = "https://zlogin42348.herokuapp.com/api/auth/login";
 
 class Login extends Component {
@@ -10,7 +11,8 @@ class Login extends Component {
         this.state={
             email:'panku42348@gmail.com',
             password:'1234',
-            message:''
+            message:'',
+            login:""
         }
     }
 
@@ -34,13 +36,15 @@ class Login extends Component {
             }else{
                 sessionStorage.setItem('ltk',data.token)
                let orders=sessionStorage.getItem("addedtocart")
-               if(orders!==""){
-                   this.props.history.push('/placeOrder')
-               }
-               else{
+            //    if(orders!==""){
+            //     this.props.history.push('/placeOrder')   
+            //    }
+            //    else{
+            //     sessionStorage.removeItem('addtocart')
                 this.props.history.push('/')
 
-               }
+               
+
                
             }
         })
@@ -55,7 +59,7 @@ class Login extends Component {
                 <hr/>
                 <div className="panel panel-success">
                     <div className="panel-heading">
-                        Login
+                        <h2 className="alpha">Login</h2>
                     </div>
                     <div className="panel-body">
                         <h3 style={{color:'red'}}>{this.state.message}</h3>
@@ -72,7 +76,7 @@ class Login extends Component {
                             </div>
                             
                         </div>
-                        <button className="btn btn-info" onClick={this.login}>Login</button>
+                        <button className=" log1 btn btn-success" onClick={this.login}>Login</button>
                     
                         </div>
                 </div>

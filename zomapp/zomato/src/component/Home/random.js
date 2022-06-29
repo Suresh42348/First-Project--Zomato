@@ -3,7 +3,7 @@ import './Search.css';
 import {withRouter} from 'react-router-dom'
 
 const url = "https://zomato42348.herokuapp.com/location"
-const restUrl = "https://zomatoajulypi.herokuapp.com/restaurant?stateId="
+const restUrl = "https://zomato42348.herokuapp.com/restaurants?stateId="
 class Search extends Component{
 
     constructor(props){
@@ -39,7 +39,7 @@ class Search extends Component{
     handleRestaurants = (event) => {
         let restId = event.target.value;
         console.log(">>>>inside",restId)
-        this.props.history.push(`/details/${restId}`)
+        this.props.history.push(`/details?restId=${restId}`)
     }
 
     handleCity = (event) => {
@@ -52,15 +52,16 @@ class Search extends Component{
         })
     }
 
+
     render(){
-        console.log(">>>>inside props>>",this.props)
+        console.log(">>>>inside render")
         return(
             <div className="div1 ">
             <div className="header">
-            <a className="linkcolor" href="#">Get the app</a> 
+            <a className="linkcolor" href="https://www.zomato.com/">Get the app</a> 
             </div>
             <div className="header2">
-            <a className="linkcolor" href="#">Add  Restaurent</a>  
+            <a className="linkcolor" href="https://www.zomato.com/">Add  Restaurent</a>  
             </div>
             <div id="heading">
                 <span><i>zomato </i></span>
@@ -84,18 +85,22 @@ class Search extends Component{
         
         </div>
 
+       
+           
+            
+            
         )
     }
 
-    // api calling on page load
-    componentDidMount(){
-        console.log(">>>>inside componentDidMount")
-        fetch(url,{method:'GET'})
-        .then((res) => res.json())
-        .then((data) => {
-            this.setState({location:data})
-        })
-    }
+  // api calling on page load
+  componentDidMount(){
+    console.log(">>>>inside componentDidMount")
+    fetch(url,{method:'GET'})
+    .then((res) => res.json())
+    .then((data) => {
+        this.setState({location:data})
+    })
+}
 }
 
 export default withRouter(Search)

@@ -1,0 +1,24 @@
+.main1{
+    display: inline-block;
+    height:fit-content;
+    box-shadow:1px 1px 1px 5px lightgrey
+}
+.text{
+    float:left;
+    width:30%;
+    text-align: justify;
+    margin-left:19%;
+    font-size: large;
+
+}
+.img1{
+    float:left;
+    width:30%;
+    margin-left:2%;
+    margin-right:19%;
+
+}
+.img1 img{
+    border-radius: 5px;
+
+}

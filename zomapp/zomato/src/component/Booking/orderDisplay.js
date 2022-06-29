@@ -13,9 +13,9 @@ const OrderDisplay = (props) => {
                         <td>{item.phone}</td>
                         <td>{item.email}</td>
                         <td>Rs. {item.cost}</td>
-                        <td>{item.date}</td>
+                        {/* <td>{item.date}</td>
                         <td>{item.status}</td>
-                        <td>{item.bank_name}</td>
+                        <td>{item.bank_name}</td> */}
                     </tr>
                 )
             })
@@ -34,9 +34,9 @@ const OrderDisplay = (props) => {
                         <th>Phone</th>  
                         <th>Email</th>  
                         <th>Cost</th>  
-                        <th>Date</th>  
+                        {/* <th>Date</th>  
                         <th>Status</th>   
-                        <th>BankName</th>  
+                        <th>BankName</th>   */}
                     </tr>
                 </thead>
                 <tbody>

@@ -18,6 +18,7 @@ class Header extends Component {
     handleLogout = () => {
         sessionStorage.removeItem('ltk')
         sessionStorage.removeItem('userInfo')
+        sessionStorage.removeItem('addtocart')
         sessionStorage.setItem('loginStatus',false)
         this.setState({userData:''})
         this.props.history.push('/')
@@ -36,31 +37,33 @@ class Header extends Component {
             
             return(
                 <>
-                <div className="btnlogin">
-                         <Link to="/" className="btn btn-success">
-                             <span className="glyphicon glyphicon-user"></span> Hi {this.state.userData.name}
-                        </Link>
-                       
-                    </div> &nbsp;
+                 
                    <div className="btnlogin">
                         <button onClick={this.handleLogout} className="btn btn-danger">
                         Logout
                         </button>
-                   </div>
+                   </div>&nbsp;
+                   <div className="btnlogin">
+                         <Link to="/" className="btn btn-success">
+                             <span className="glyphicon glyphicon-user"></span> Hi {this.state.userData.name}
+                        </Link>
+                       
+                    </div>
                 </>
             )
         }else{
             return(
                 <>
-                    <div className="btnlogin">
-                         <Link to="/login" className="btn btn-success">
-                             <span className="glyphicon glyphicon-log-in"></span> Login
-                        </Link>
-                    </div> &nbsp;
+                   
                    <div className="btnlogin">
                         <Link to="/register" className="btn btn-primary">
                         <span className="glyphicon glyphicon-user"></span> Register</Link>
-                   </div>
+                   </div>&nbsp;
+                   <div className="btnlogin">
+                         <Link to="/login" className="btn btn-success">
+                             <span className="glyphicon glyphicon-log-in"></span> Login
+                        </Link>
+                    </div> 
                 </>
             )
         }
@@ -87,7 +90,7 @@ class Header extends Component {
                     <div className="collapse navbar-collapse" id="myNav">
                         <ul className="nav navbar-nav default">
                             <li> <Link to="/" className="default">Home</Link></li>
-                            <li><a href="#" className="default">About us</a></li>
+                            <li> <Link to="/aboutus" className="default">About Us</Link></li>
                             <li><Link to="/Services" className="default">Services</Link></li>
                             <li><a href="#" className="default">Contact</a></li>
                          </ul>

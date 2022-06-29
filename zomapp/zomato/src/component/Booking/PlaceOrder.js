@@ -4,6 +4,7 @@ import Header from '../../header'
 
 const url = "https://zomato42348.herokuapp.com/menuItem";
 const purl = "http://zomato42348.herokuapp.com/placeOrder";
+let st;
 
 class PlaceOrder extends Component {
     constructor(props){
@@ -16,7 +17,7 @@ class PlaceOrder extends Component {
             email:sessionStorage.getItem('userInfo')?sessionStorage.getItem('userInfo').split(',')[1]:'',
             cost:0,
             phone:sessionStorage.getItem('userInfo')?sessionStorage.getItem('userInfo').split(',')[2]:'',
-            address:'Hon 23',
+            address:'Block C41, Setno 09, Vikasnagar, Shimla',
             menuItem:''
         }
     }
@@ -51,9 +52,11 @@ class PlaceOrder extends Component {
             },
             body:JSON.stringify(obj)
         })
-        //.then(this.props.history.push('/viewBooking'))
-        .then(console.log('order Added'))
         
+        .then(st="yes")
+        .then(console.log(st))
+        .then(this.props.history.push('/viewBooking'))
+ 
     }
 
     render(){
@@ -67,6 +70,7 @@ class PlaceOrder extends Component {
                 </div>
             )
         }
+        
         return(
             <>
                 <Header/>
@@ -77,7 +81,7 @@ class PlaceOrder extends Component {
                         <h3>Your Order For {this.props.match.params.restName}</h3>
                     </div>
                     <div className="panel-body">
-                        <form action="https://developerpayment.herokuapp.com/paynow" method="POST">
+                        <form>
                         <input type="hidden" name="cost" value={this.state.cost}/>
                         <input type="hidden" name="id" value={this.state.id}/>
                         <input type="hidden" name="hotel_name" value={this.state.hotel_name}/>
@@ -116,6 +120,8 @@ class PlaceOrder extends Component {
             </div>
             </>
         )
+
+        
     }
 
     //call api 

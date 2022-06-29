@@ -2,11 +2,10 @@ import React,{Component} from 'react';
 import axios from 'axios';
 import './details.css';
 import {Link} from 'react-router-dom';
-import MenuDisplay from './menuDisplay'
-import Header from '../../header'
-
-const url = "http://zomato42348.herokuapp.com/details"
-const menuUrl = "http://zomato42348.herokuapp.com/menu"
+import MenuDisplay from './menuDisplay';
+import Header from '../../header';
+const url = "https://zomato42348.herokuapp.com/details"
+const menuUrl = "https://zomato42348.herokuapp.com/menu"
 
 class RestDetails extends Component {
 
